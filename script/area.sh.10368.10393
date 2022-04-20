@@ -1,0 +1,8 @@
+
+#radius of circle
+
+echo "Enter the  radius:"
+read r
+area=` expr $r \* $r \* 3.14 ` 
+echo "radius of circle is $area"
+exit 0
