@@ -1,0 +1,46 @@
+/*3. Define 2 classes; one for generating multiplication table of 5 and other for displaying first N prime numbers. Implement using threads. (Thread class)*/
+
+import java.util.*;
+
+class A extends Thread
+{
+	public void run()
+	{
+		for(int i=1;i<10;i++)
+		{
+			System.out.println(i + "*" + 5 + "=" + (i*5));
+		}
+	}
+}
+
+
+class B extends Thread
+{
+	public void run()
+	{
+		int n=10;
+		int m=n/2;
+		int flag=0;
+		if(n==0 || n==1)
+		{
+			System.out.println(n + "is not prime number");
+			flag=1;
+			break;
+		}
+		if(flag==0)
+		{
+			System.out.println(n + "is not prime number");
+		}
+	}
+}
+
+
+class main
+{
+	public static void main(String[] args) 
+	{
+        	Thread t1 = new Thread(new Runnable() 
+		{
+            	public void run() {
+
+
