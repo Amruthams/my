@@ -14,10 +14,11 @@ echo "Enter file1:"
 read file1
 echo "Enter file2:"
 read file2
-cmp $file1 $file2 > /dev/null
+cmp $file1 $file2 > /dev/null     #output redirection    
 if [ $? -eq 0 ]
 then
 	rm $file2
-	echo " The 2 files are identical, file2 is removed."
+	echo " The 2 files are identical, file 2 is removed."
+	exit
 fi
 echo "Files are not identical,no file deleted."

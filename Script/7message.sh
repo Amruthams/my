@@ -1,5 +1,4 @@
-#7. Shell script to display message “Good morning”,”Good afternoon”,”Good evening” and “Good
-#night” according to system time
+#7. Shell script to display message “Good morning”,”Good afternoon”,”Good evening” and “Good night” according to system time
 
 
 
